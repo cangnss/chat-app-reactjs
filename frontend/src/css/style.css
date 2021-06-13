@@ -1,0 +1,119 @@
+#root {
+  padding-top: 30px;
+}
+
+#root .chat-wrap {
+  width: 400px;
+  overflow: hidden;
+  background-color: transparent;
+  margin: 0 auto 0 auto;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, #000b1d 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, #000b1d 0px 8px 16px -8px;
+  border-radius: 18px;
+}
+
+#root .chat-wrap .justify-content-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#root .chat-wrap .justify-content-between .person {
+  width: 25px;
+  height: 25px;
+  background: #d53068;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+#root .chat-wrap .justify-content-between i {
+  margin-left: 10px;
+}
+
+#root .chat-wrap input {
+  padding: 18px 0;
+  border: none;
+  text-align: center;
+  outline: transparent;
+}
+
+#root .chat-wrap .chat-window {
+  background-image: url("https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  overflow-y: auto;
+}
+
+#root .chat-wrap .chat-window .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 400px;
+}
+
+#root .chat-wrap .chat-window .flex .self {
+  width: 200px;
+  text-align: right;
+}
+
+#root .chat-wrap .chat-window #output p {
+  padding: 15px;
+  width: 200px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+#root .chat-wrap .chat-window #output p:nth-child(odd) {
+  background-color: #968282;
+}
+
+#root .chat-wrap .chat-window #output p:nth-child(even) {
+  background-color: #075e54;
+}
+
+#root .chat-wrap form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#root .chat-wrap form input {
+  padding: 10px 20px;
+  width: 80%;
+  border: 0;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+
+#root .chat-wrap form button {
+  background: transparent;
+  color: #000;
+  border: 0;
+  border-radius: 0 0 5px 5px;
+  padding: 12px 0;
+  font-size: 17px;
+}
+
+#root .chat-wrap form button i {
+  margin-right: 25px;
+}
+
+#root .chat-wrap form button i:hover {
+  color: #d53068;
+}
+/*# sourceMappingURL=style.css.map */

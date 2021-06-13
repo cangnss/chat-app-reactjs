@@ -1,0 +1,103 @@
+$primary-color: #000;
+$secondry-color: #fff;
+$pink-color: #d53068;
+$green-color: #075e54;
+$gray-color: #968282;
+#root {
+  padding-top: 30px;
+  .chat-wrap {
+    width: 400px;
+    overflow: hidden;
+    background-color: transparent;
+    margin: 0 auto 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      #000b1d 0px 8px 16px -8px;
+    border-radius: 18px;
+
+    .justify-content-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .person {
+        width: 25px;
+        height: 25px;
+        background: $pink-color;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+
+      i {
+        margin-left: 10px;
+      }
+    }
+
+    input {
+      padding: 18px 0;
+      border: none;
+      text-align: center;
+      outline: transparent;
+    }
+    .chat-window {
+      background-image: url("https://i.pinimg.com/originals/f7/ae/e8/f7aee8753832af613b63e51d5f07011a.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 600px;
+      overflow-y: auto;
+
+      .flex {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 400px;
+
+        .self {
+          width: 200px;
+          text-align: right;
+        }
+      }
+      #output {
+        p {
+          padding: 15px;
+          width: 200px;
+          border-radius: 25px;
+          color: $secondry-color;
+          &:nth-child(odd) {
+            background-color: $gray-color;
+          }
+          &:nth-child(even) {
+            background-color: $green-color;
+          }
+        }
+      }
+    }
+    form {
+      display: flex;
+
+      input {
+        padding: 10px 20px;
+        width: 80%;
+        border: 0;
+        display: block;
+        width: 100%;
+        font-size: 15px;
+      }
+      button {
+        background: transparent;
+        color: $primary-color;
+        border: 0;
+        border-radius: 0 0 5px 5px;
+        padding: 12px 0;
+        font-size: 17px;
+        i {
+          margin-right: 25px;
+
+          &:hover {
+            color: $pink-color;
+          }
+        }
+      }
+    }
+  }
+}
